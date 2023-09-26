@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": ["**/*.config.ts"]
+}
