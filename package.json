@@ -1,41 +1,18 @@
 {
   "name": "pkg-name",
-  "type": "module",
   "version": "0.0.0",
   "private": false,
-  "description": "",
   "author": "lvjiaxuan <471501748@qq.com> (https://github.com/lvjiaxuan)",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lvjiaxuan/pkg-name"
-  },
-  "keywords": [],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "dev": "echo dev",
-    "build": "echo build",
-    "lint": "eslint .",
-    "prepublishOnly": "nr build",
-    "r": "lvr --no-push"
+    "test": "vitest"
   },
   "devDependencies": {
     "@lvjiaxuan/eslint-plugin": "^0.20.0",
     "@types/node": "^20.7.0",
     "@vue/tsconfig": "^0.4.0",
     "eslint": "^8.50.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.5"
   }
 }
