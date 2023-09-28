@@ -46,8 +46,8 @@ test('should handle inline async arrow function wrapped in parentheses', () => {
 })
 
 test('should handle inline async function expression wrapped in parentheses', () => {
-  const expression = '(async function (foo) { await fetch(foo); bar = foo })'
-  const expressionWithTS = '(async function (foo: any): Promise<any> { await fetch(foo); bar = foo }})'
+  const expression = '(async function (foo) {\nawait fetch(foo)\nbar = foo\n})'
+  const expressionWithTS = '(async function (foo: any): Promise<any> {\nawait fetch(foo)\nbar = foo\n}})'
 
   expect(fnExpRE.test(expression)).toBeTruthy()
   expect(fnExpRE.test(expressionWithTS)).toBeTruthy()
