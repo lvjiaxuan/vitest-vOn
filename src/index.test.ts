@@ -3,7 +3,7 @@ import { expect, test } from 'vitest'
 
 // old
 // const fnExpRE = /^\s*([\w$_]+|(async\s*)?\([^)]*?\))\s*(:[^=]+)?=>|^\s*(async\s+)?function(?:\s+[\w$]+)?\s*\(/
-const fnExpRE = /(^[\s\(]*((async\s*)?([\w$_]+|\([^)]*?\))\s*(:[^=]+)?=>|(async\s+)?function(?:\s+[\w$_]*)\s*\([^)]*?\)\s*(:[^=]+)?{))[\s\S]+\)*/
+const fnExpRE = /(^[\s\(]*((async\s*)?([\w$_]+|\([^)]*?\))\s*(:[^=]+)?=>|(async\s+)?function(?:\s*[\w$_]*)\s*\([^)]*?\)\s*(:[^=]+)?{))[\s\S]+\)*/
 
 test('should handle inline arrow function wrapped in parentheses', () => {
   const expression = '(foo => bar = foo)'
