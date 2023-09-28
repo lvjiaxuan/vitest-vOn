@@ -1,14 +1,13 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "allowImportingTsExtensions": true,
-    "noEmit": true
+    "composite": true,
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
+    "esModuleInterop": true,
+    "strict": true
   },
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ],
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.mjs", "src/**/*.vue"]
+  "include": ["src/index.test.ts"]
 }
